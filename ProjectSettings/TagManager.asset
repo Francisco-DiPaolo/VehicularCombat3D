@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Bullet
+  - Destination
+  - Origen
+  - Destino
+  - Liana
+  - BulletEnemie
   layers:
   - Default
   - TransparentFX

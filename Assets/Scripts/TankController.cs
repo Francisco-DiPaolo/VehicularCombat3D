@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TankController : MonoBehaviour
 {
@@ -26,6 +27,25 @@ public class TankController : MonoBehaviour
     [SerializeField] private Transform frontRightWheelTransform;
     [SerializeField] private Transform backLeftWheelTransform;
     [SerializeField] private Transform backRightWheelTransform;
+
+    [Header("Player Properties")]
+    public int vidaPlayer;
+
+    public Slider Vida;
+
+    GameManager gameController;
+
+    void Start()
+    {
+        gameController = FindObjectOfType<GameManager>();
+    }
+
+    void Update()
+    {
+        Vida.value = vidaPlayer;
+
+        DestroyPlayer();
+    }
 
     private void FixedUpdate()
     {
@@ -84,5 +104,23 @@ public class TankController : MonoBehaviour
         wheelCollider.GetWorldPose(out pos, out rot);
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("BulletEnemie"))
+        {
+            vidaPlayer -= 25;
+
+            Vida.value = vidaPlayer;
+        }
+    }
+
+    void DestroyPlayer()
+    {
+        if (vidaPlayer <= 0)
+        {
+            gameController.Lose();
+        }
     }
 }
