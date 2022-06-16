@@ -1068,7 +1068,7 @@ MonoBehaviour:
   Vida: {fileID: 4921406890666136578}
   firePoint: {fileID: 4921406891301269447}
   bulletPrefab: {fileID: 1935470374605637925, guid: c0c614b4074480e409e0aa5506249a6a, type: 3}
-  bulletForce: 60
+  bulletForce: 100
   topTank: {fileID: 8427951320436451402}
   distanciaShot: 32
   mira: {fileID: 4921406891301269447}
