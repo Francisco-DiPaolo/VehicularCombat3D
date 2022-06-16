@@ -62,7 +62,7 @@ public class Enemy : MonoBehaviour
         distancia = Vector3.Distance(transform.position, player.position);
 
         topTank.LookAt(player);
-        mira.LookAt(player);
+        //mira.LookAt(player);
     }
 
     private void Destruir()

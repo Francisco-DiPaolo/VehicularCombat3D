@@ -2236,7 +2236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1782000514803244477, guid: 5bec63d8ce5de714abcf4dc5df114d93, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 94.13
+      value: 94.9
       objectReference: {fileID: 0}
     - target: {fileID: 1782000514803244477, guid: 5bec63d8ce5de714abcf4dc5df114d93, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2256,11 +2256,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1782000514803244477, guid: 5bec63d8ce5de714abcf4dc5df114d93, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 82.99
+      value: 82.38
       objectReference: {fileID: 0}
     - target: {fileID: 1782000514803244477, guid: 5bec63d8ce5de714abcf4dc5df114d93, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 25.69
+      value: 20.59
       objectReference: {fileID: 0}
     - target: {fileID: 1782000514803244477, guid: 5bec63d8ce5de714abcf4dc5df114d93, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2921,6 +2921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyTwo
       objectReference: {fileID: 0}
+    - target: {fileID: 4921406892346116456, guid: 6b977783be36ef64ea9f6437e86ab38c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.96
+      objectReference: {fileID: 0}
     - target: {fileID: 4921406892638197230, guid: 6b977783be36ef64ea9f6437e86ab38c, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3410,8 +3414,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.000005722, y: 0}
-  m_SizeDelta: {x: 429.8102, y: 44.5191}
+  m_AnchoredPosition: {x: -0.00000095367, y: 0}
+  m_SizeDelta: {x: 712.3096, y: 44.5191}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1523600897
 MonoBehaviour:
